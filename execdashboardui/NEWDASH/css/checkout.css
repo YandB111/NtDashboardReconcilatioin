@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,700,700i,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap'); */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {border: 0;font-size: 100%;font: inherit;/* vertical-align: baseline;*/}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body { font-family: 'Open Sans', sans-serif;color: black;background: #fff; font-weight:500;}
+a, img {border: none;}
+a {-webkit-transition: all 0.4s; /* Safari */transition: all 0.4s;color: #333;}
+a:hover, a:focus, a:active {outline: 0;-webkit-transition: all 0.4s; /* Safari */transition: all 0.4s;}
+img {max-width: 100%;}
+::-webkit-input-placeholder {color:#ccc;opacity:1;}
+:-moz-placeholder { /* Firefox 18- */color:#ccc;opacity:1;}
+::-moz-placeholder {  /* Firefox 19+ */color: #ccc;opacity:1;}
+:-ms-input-placeholder {color: #ccc;opacity:1;}
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea {-webkit-appearance: none;}
+input[type="text"], input[type="email"], input[type="password"], textarea, select {border-radius: 4px;-webkit-border-radius: 4px;border: 1px solid #ddd;width: 100%;color: #aaa;padding: 0 10px;color: #000;outline: none;font-size: 14px;}
+.checkout_head{
+  background-color: #20a8d8;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0;
+}
+.checkout .booking_location {
+  font-weight: 600;
+}
+.checkout_table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.booking_details, .guest_details, .payments_details {
+  padding: 20px;
+}
+.checkout .table {
+  font-size: 14px;
+}
+.checkout .book_date {
+  display: block;
+  font-size: 14px;
+  color: #3d3d3d;
+  margin-top: 20px;
+}
+.checkout .book_id, .checkout .bookedon_date, .checkout .duration_dates {
+  display: inline-block;
+  margin-right: 15px;
+  width: 14%;
+}
+.checkout .book_date strong {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.checkout .strong_font {
+  font-weight: 600;
+  font-size: 16px;
+}
+.checkout .table th {
+  font-weight: 600;
+}
+.checkout .print_media_link {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.checkout .print_media_link img {
+  width: 24px;
+  margin-right: 5px;
+}
+.checkout .custom_br_radius, .checkout .custom_br_radius:focus {
+  border-radius: 0 0 .25rem .25rem;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+.checkout .reason_head{
+  background-color: #20a8d8;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0;
+}
+.checkout .reason_head .close, .reason_head .close:hover {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+h1.checkout_title {
+color: #fff;
+font-size: 18px;
+}

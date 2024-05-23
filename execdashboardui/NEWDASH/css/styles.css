@@ -1,0 +1,374 @@
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin:0;padding:0;}
+*:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd{margin:0;padding:0;}	
+body{font-size:14px;font-family: Arial, Helvetica, sans-serif;color: #43425D;background-color: #fff;}
+body p {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6{font-weight:600;font-family: Arial, Helvetica, sans-serif;color: #43425D;}
+img{border:0px;max-width:100%;}
+input[type="submit"],  
+button[type="submit"],
+button{-webkit-appearance:none;appearance:none;cursor:pointer;outline:none !important;}
+a, a:hover{text-decoration:none;outline:none;color:#007bff;}
+ul, ol{list-style-type:none;}
+.clearboth:after,.clearboth:before{clear:both;width:100%;display:block;content:'';}	
+title{color: red;font-weight:600;font-family: Arial, Helvetica, sans-serif;font-size: 18px;}
+label {font-size: 13px;margin-bottom: 5px;font-weight: 600;}
+.custom-select, .form-control {font-size: 14px;}
+.btn.btn-primary {
+  background-color: #ff000c;
+  border: 0;
+  font-size: 16px;
+  width: 100px; 
+  margin-top: 19px;
+  margin-right: 19px;
+}
+.btn.btn-primary-filter {
+  background-color: #ff000c;
+  border: 0;
+  font-size: 16px;
+  width: 100px; 
+ margin-top: 138px;
+    margin-right: 25px;
+}
+
+table.table tr th, table.table tbody tr td {vertical-align: middle;padding: 5px 8px;}
+* {font-family: Arial, Helvetica, sans-serif;}
+/****************************main content*************************/
+.card-header.card-title {
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 600;
+text-align: left;
+}
+.card-body {
+    padding: 10px 20px;
+}
+.card-footer {
+	padding: 5px 20px;
+	text-align: right;
+}
+.revenue_section table.table thead tr th {
+    font-size: 13px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	padding: 5px 8px;
+}
+.bg-grey {
+    background-color: #b0b0b0;
+}
+.bg_light  {
+    background-color: #d6ecff;
+}
+/************************13-july-2020*********************/
+.page_title {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.custon_label_height {
+	line-height: 38px;
+}
+.pie_height {
+    height: 200px;
+}
+/**************************search div******************/
+.float-div {
+	background-color: #fff;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	position: fixed;
+	right: -100%;
+	top: 10%;
+	width: 50%;
+	z-index: 99999;
+	-webkit-transition: right 1s;
+	-moz-transition: right 1s;
+	-ms-transition: right 1s;
+	-o-transition: right 1s;
+	transition: right 1s;
+	border: 1px solid #000;
+}
+.position-div {
+    position: relative;
+}
+.float-frame {
+    background-color: #fff;
+    color: #000;
+    float: right;
+    padding: 10px 0;
+    width: 100%;
+}
+.flaot_div_header {
+    background-color: #ccc;
+    padding: 15px;
+    margin: -25px -15px 0 -15px;
+}
+a.float_close {
+    float: right;
+    font-size: 27px;
+    line-height: 12px;
+    color: #ff000c;
+}
+.open {
+    right: 0 !important;
+    -webkit-transition: right 1s;
+    -moz-transition: right 1s;
+    -ms-transition: right 1s;
+    -o-transition: right 1s;
+    transition: right 1s;
+}
+.float_overlay {
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+.filter:before {
+    content: "\f0b0";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.filter {
+    padding-left: 25px;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.filter select:focus, .filter select:active {
+    outline: none;
+    box-shadow: none;
+}
+.daterangepicker.dropdown-menu.ltr.opensright {
+    z-index: 99999;
+}
+/*****************Datepicker*******************/
+.ui-widget-header {
+    border: 1px solid #000 !important;
+    background: #000 !important;
+    color: #ffffff !important;
+    width: 175px;
+    text-align: center;
+    padding: 20px 0;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+    border: 1px solid #000 !important;
+    background: #000 !important;
+    color: #ffffff !important;
+}
+.ui-widget-header .ui-icon {
+    background-image: url("../images/next.png") !important;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    background-position: unset;
+}
+.ui-widget-header .ui-datepicker-prev .ui-icon {
+    transform: rotate(180deg);
+}
+.month_date::after {
+    content: "\f073";
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 31px;
+    top: 8px;
+}
+.month_date .form-control {
+    z-index: 9999;
+    position: relative;
+    background-color: transparent;
+}
+table.ui-datepicker-calendar {
+    display: none;
+}
+.monthpicker, .monthpicker:focus, .monthpicker:active {
+  width: 180px;
+  border: 0 !important;
+  outline: none !important;
+  font-size: 14px;
+  padding: 6px 0;
+  z-index: 1;
+  position: relative;
+  height: 31px !important;
+  cursor: pointer;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+    display: none;
+}
+/**********************daterange picker*************/
+.custom_daterange {
+    float: right;
+    position: relative;
+    background-color: transparent;
+}
+.custom_daterange .fa.fa-calendar {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+.custom_daterange .form-control{
+    z-index: 9;
+    position: relative;
+    background-color: transparent;
+    padding-right: 34px;
+}
+.custom_daterange, .custom_daterange .form-control:focus, .custom_daterange:active {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.range_date {
+    display: inline-flex;
+    float: right;
+}
+.mrp-container{
+    margin-top:10px;
+  }
+  
+  .mrp-icon{
+    border: solid 1px #ddd;
+    border-radius: 5px 0px 0px 5px;
+    color: #40667A;
+    background: #eee;
+    padding: 7px;
+    margin-right:0px;
+  }
+  
+  .mrp-monthdisplay{
+    display:inline-block!important;
+    border: solid 1px #ddd;
+    padding: 5px 12px 5px 8px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #fff;
+    cursor:pointer;
+    margin-left: -5px;
+  }
+  
+  .mrp-lowerMonth, .mrp-upperMonth{
+    color: #40667A;
+    font-weight:bold;
+    font-size: 11px;
+    text-transform:uppercase;
+  }
+  
+  .mrp-to{
+    color: #aaa;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 11px;
+    text-transform: uppercase;
+    /* background-color: #eee; */
+    padding: 5px 3px 5px 3px;
+  }
+  
+  .mpr-calendar{
+    display:inline-block;
+    padding: 3px 5px;
+    border-right: solid #999 1px;
+  }
+  
+  .mpr-calendar::last-child{
+    border-right: none;  
+  }
+  
+  .mpr-month{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .mpr-calendar h5{
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px
+  }
+  
+  .mpr-selected{
+    background: rgba(64, 102, 122, 0.75);;
+    color: #fff;
+  }
+  
+  .mpr-month:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ddd inset;
+    cursor:pointer;
+  }
+  
+  .mpr-selected.mpr-month:hover{
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  
+  .mpr-calendarholder .col-xs-6 {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  
+  .mpr-calendarholder .col-xs-1 {
+    max-width: 150px;
+    min-width: 150px;
+  }
+  
+  .mpr-calendarholder .btn-info{
+    background-color: #40667A;
+    border-color: #406670;
+    width:100%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+  
+  .mpr-quickset{
+    color: #666;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .mpr-yeardown, .mpr-yearup{
+    margin-left: 5px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .mpr-yeardown{
+    float:left;
+  }
+  
+  .mpr-yearup{
+    float:right;
+  }
+  
+  .mpr-yeardown:hover,.mpr-yearup:hover{
+    color: #40667A;
+  }
+  
+  .mpr-calendar:first .mpr-selected:first{
+      background-color: #40667A;
+  }
+  
+  .mpr-calendar:last .mpr-selected:last{
+      background-color: #40667A;
+  }
+  
+  .popover{
+    max-width: 1920px!important;
+  }
+  .fa_custom_calendar {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+}
+#ui-datepicker-div{
+  z-index: 99999 !important;
+}
+.fa.fa-filter {
+  color: #ff000c;
+}
