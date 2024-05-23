@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+<!--
+# Output to a log file with DEBUG level
+log4j.appender.ROLLOVER_FILE_DEBUG=org.apache.log4j.RollingFileAppender
+log4j.appender.ROLLOVER_FILE_DEBUG.File=workspace/log/app_debug.log
+log4j.appender.ROLLOVER_FILE_DEBUG.MaxFileSize=10000KB
+log4j.appender.ROLLOVER_FILE_DEBUG.MaxBackupIndex=2
+log4j.appender.ROLLOVER_FILE_DEBUG.Threshold=DEBUG
+log4j.appender.ROLLOVER_FILE_DEBUG.layout=org.apache.log4j.PatternLayout
+log4j.appender.ROLLOVER_FILE_DEBUG.layout.ConversionPattern=%d{yy/MM/dd HH:mm:ss} %-6p(%F:%L) - %m%n
+-->
+
+	<appender name="info" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="../log/ReconcilationDashbrd.log" />
+		<param name="DatePattern" value="_yyyy-MM-dd" />
+		 <param name="MaxFileSize" value="1000KB"/>
+    	<!-- Keep one backup file -->
+        <param name="MaxBackupIndex" value="4"/>
+		<layout class="org.apache.log4j.PatternLayout" >
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="INFO" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="INFO" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>	
+	<appender name="errorlogs" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="../log/ReconcilationDashbrderror.log" />
+		<param name="DatePattern" value=".yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout" >
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="ERROR" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="ERROR" />
+			<param name="LevelMax" value="ERROR" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>	
+ 	<appender name="otherLogsFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="../log/ReconcilationDashbrdother.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!--  ><param name="ConversionPattern" value="%d{MM-dd-yyyy HH:mm:ss} %-5p %c - %m%n" />-->
+		</layout>		
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="DEBUG" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="DEBUG" />
+			<param name="LevelMax" value="FATAL" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+	
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p - %m%n" />
+		</layout>
+	</appender>	
+
+	<root>
+		<priority value="INFO" />	
+		<appender-ref ref="info" />				
+		<appender-ref ref="errorlogs" />
+		<appender-ref ref="console" />
+	</root>
+
+</log4j:configuration>
